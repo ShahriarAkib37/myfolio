@@ -1,0 +1,369 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+.box_a{
+    background-color: #cfc91d;
+    color: black;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 19px 43px;
+    display: inline-block;
+    
+}
+
+ul,ol{
+    list-style: none;
+}
+
+/* body */
+
+body{
+     font-family: 'Open Sans', sans-serif;;
+}
+
+/* body */
+
+/* heading starts */
+.heading{
+    text-align: center;
+}
+.heading h2{
+    text-transform: uppercase;
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+
+}
+.heading p{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* heading ends */
+
+/* common css end*/
+
+/* Nav bar stars */
+nav{
+    background-color: #02918c;
+}
+ nav .row{
+    align-items: center;
+ }
+nav .logo{
+    width: 30%;  
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+    
+}
+.menu .row{
+    justify-content: end;
+}
+nav .menu li{
+    display: inline-block;
+}
+nav .menu li a{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    padding: 26px 25px;
+    font-weight: 800;
+    display: block;
+    transition: 0.4987s;
+}
+ 
+nav .menu li >a:hover{
+    color: antiquewhite;
+}
+
+/* Nav bar ends */
+
+/* banner stars */
+#banner{
+    background-image: url(../images/banner-1.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .row{
+    align-items: center;
+    height: 728px;
+}
+
+#banner .banner_center{
+    text-align: center;
+    width: 100%;
+  
+}
+.banner_center h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.banner_center h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 30px;
+}
+
+.banner_center p{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+.banner_center img{
+    margin: 52px 0;
+}
+
+/* banner ends */
+/* about me */
+
+#aboutme .heading{
+    margin: 98px 0 0 0 ;
+    text-align: center;
+}
+#aboutme .about_p{
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+#aboutme p{
+    justify-content: center;
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;  
+}
+#aboutme span{
+    font-weight: 800;
+    color: #7e8287;
+    font-size: 23px;
+}
+.about_card{
+    width: 25%;
+    border-right: 1px solid #7e8287;
+    text-align: center;
+    padding: 36px 0 54px 0;
+     margin: 83px 0 100px 0;
+
+}
+.about_card:nth-child(4){
+    border-right: none;
+}
+.about_card i {
+    font-size: 35px;
+    color: #02918c;
+}
+
+.about_card h4 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 30px;
+    color: #7e8287;
+}
+.about_card p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+    margin-top: 29px;
+}
+
+/* about me endss */
+
+/* services starts */
+#services{
+    background-image: url(../images/services.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 728px;
+    padding: 74px 0;
+}
+.services_half{
+    width: 50%;
+
+}
+#services .heading{
+    text-align: left;
+   
+}
+#services .heading p{
+    margin-top: 40px;
+}
+#services .services_p{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #7e8287;
+}
+.services_card {
+    width: 50%;
+    text-align: left;
+    
+     margin: 52px 0 0 0;
+     
+
+}
+.services_card i {
+    font-size: 35px;
+    color: #02918c;
+}
+
+.services_card h4 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 16px;
+    color: #7e8287;
+}
+.services_card p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+    margin-top: 20px;
+}
+
+/* services ends */
+/* my work stars */
+#mywork{
+    margin: 100px 0 80px 0;
+}
+#mywork .mywork_p{
+    margin-top: 29px;
+    margin-bottom: 80px;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 30px;
+}
+.mywork_card{
+    width: 25%;
+    position: relative;
+}
+.mywork_card img{
+    width: 100%;
+    display: block;
+}
+.mywork_card .overlay{
+    position: absolute;
+    text-align: center;
+    background-color: #02918c7f;
+    inset: 20px 28px;
+    opacity: 0;
+    visibility: hidden;
+    /* padding:  0 40px ; */
+    margin-top: 80px;
+    transition: 0.4354s;
+
+}
+.mywork_card:hover >.overlay{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
+}
+
+.overlay h4{
+    padding-top: 58px;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}
+.overlay p{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    padding: 14px 40px 55px 40px;
+}
+/* my work ends */
+/* contact stars */
+#contact .contact_p{
+    margin-top: 29px;
+    margin-bottom: 80px;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 30px;
+}
+
+#contact .last_box{
+    background-color: black;
+    height: 635px;
+    width: 100%;
+}
+#contact .last_box .row{
+    justify-content: center;
+}
+#contact .line_1st{
+    text-transform: uppercase;
+    color: #7e8287;
+    text-align: center;
+    width: 60%;
+    margin-top: 70px;
+   
+}
+#contact .line_1st h3{
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+#contact .line_2nd{
+    text-transform: uppercase;
+    color: #7e8287;
+    text-align: center;
+    width: 80%;
+    margin-top: 56px;
+   
+}
+#contact .line_2nd h3{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#contact .line_3nd{
+    width: 60%;
+    text-align: center;
+    margin-top: 68px;
+    
+}
+#contact .end{
+    text-align: center;
+    
+}
+#contact .end h3{
+    text-transform: uppercase;
+    color: #7e8287;
+    /* text-align: center; */
+    font-size: 12px;
+    font-weight: 400px;
+    padding: 50px 0 26px 0 ;
+
+}
+
+/* contact ends */
